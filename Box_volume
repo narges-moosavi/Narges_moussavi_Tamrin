@@ -1,0 +1,29 @@
+//Narges Moussavi
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Box_Volume
+{
+    class Program
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Enter the length of Box : ");
+            double L = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter the width of box : ");
+            double W = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter the hight of box : ");
+            double H = Convert.ToDouble(Console.ReadLine());
+            double show = calc(L, W, H);
+            Console.WriteLine("\n Box volume  = " + show);
+        }
+        private static double calc(double l, double w, double h)
+        {
+            double Result = l * w * h;
+            return Result;
+        }
+    }
+} 
